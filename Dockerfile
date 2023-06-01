@@ -18,7 +18,6 @@ RUN cp /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 COPY --from=sk-build /usr/src/app/package.json /usr/src/app/package.json
 COPY --from=sk-build /usr/src/app/package-lock.json /usr/src/app/package-lock.json
-COPY --from=sk-build /usr/src/app/migrations /usr/src/app/migrations
 
 COPY --from=sk-build /usr/src/app/build-node /usr/src/app/build-node
 
