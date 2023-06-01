@@ -1,4 +1,4 @@
-import { query } from '$lib/server/db';
+import { query } from '$lib/server/db.js';
 import { json } from '@sveltejs/kit';
 
 export async function GET() {

@@ -2,7 +2,6 @@ import PG from 'pg';
 
 import { env } from '$env/dynamic/private';
 
-
 let pool = null;
 
 export function maybeInitializePool() {
