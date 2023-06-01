@@ -25,7 +25,7 @@ export async function query(
 
 	const timingStart = new Date();
 
-	if (config.debug === true || env?.DB_DEBUG === 'true') {
+	if (config?.debug === true || env?.DB_DEBUG === 'true') {
 		console.info('----');
 		console.info(`🔰 Query: ${incomingQuery}`);
 		console.info('📊 Data: ', params);
@@ -33,7 +33,7 @@ export async function query(
 
 	if (pool) {
 		const results = await pool.query(incomingQuery, params);
-		if (config.debug === true || env?.DB_DEBUG === 'true') {
+		if (config?.debug === true || env?.DB_DEBUG === 'true') {
 			console.info(
 				'⏰ Postgres query execution time: %dms',
 				new Date().getTime() - timingStart.getTime()
