@@ -1,5 +1,5 @@
 This is the companion repo to the YouTube talk: 
-https://www.youtube.com/watch?v=KbIFRVvdgA8
+https://www.youtube.com/watch?v=NLjolI9FwCU
 
 # create-svelte
 
