@@ -1,6 +1,21 @@
 This is the companion repo to the YouTube talk: 
 https://www.youtube.com/watch?v=NLjolI9FwCU
 
+# Initial setup
+
+```sh
+cp .env.example .env
+nvm use # Or use Node.js 20
+```
+
+# Build Docker locally
+
+```bash
+docker build . --build-arg PUBLIC_HELLO=world -t test
+```
+
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).

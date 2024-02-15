@@ -2,6 +2,7 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import { PUBLIC_HELLO } from '$env/static/public';
 </script>
 
 <svelte:head>
@@ -18,11 +19,15 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		to your new<br />SvelteKit app.
 	</h1>
 
 	<h2>
 		try editing <strong>src/routes/+page.svelte</strong>
+	</h2>
+
+	<h2>
+		Public env var: {PUBLIC_HELLO}
 	</h2>
 
 	<Counter />

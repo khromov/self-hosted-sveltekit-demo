@@ -2,6 +2,7 @@ FROM node:19.7-alpine AS sk-build
 WORKDIR /usr/src/app
 
 ARG TZ=Europe/Stockholm
+ARG PUBLIC_HELLO
 
 COPY . /usr/src/app
 RUN apk --no-cache add curl tzdata
